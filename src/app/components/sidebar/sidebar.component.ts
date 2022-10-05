@@ -18,8 +18,8 @@ export const ROUTES: RouteInfo[] = [
     { path: '/upgrade', title: 'Upgrade to PRO',  icon:'unarchive', class: 'active-pro' },*/
     { path: '/bodega', title: 'Bodega',  icon:'unarchive', class: '' },
     { path: '/inventario', title: 'Inventario',  icon:'view_list', class: '' },
-    
-    
+    { path: '/login', title: 'Login',  icon:'person', class: '' },
+    { path: '/movimientoProducto', title: 'MovimientoProducto',  icon:'view_in_ar', class: '' },
 ];
 
 @Component({

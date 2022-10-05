@@ -10,6 +10,8 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { BodegaComponent } from '../../Bodega/Bodega.component';
 import { InventarioComponent } from '../../Inventario/Inventario.component';
+import { LoginComponent} from '../../Login/Login.component';
+import { MovimientoProductoComponent} from '../../MovimientoProducto/MovimientoProducto.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -64,4 +66,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'bodega',         component: BodegaComponent },
     { path: 'inventario',     component: InventarioComponent },
+    { path: 'login',          component: LoginComponent },
+    { path: 'movimientoProducto',          component: MovimientoProductoComponent },
 ];

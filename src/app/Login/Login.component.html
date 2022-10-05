@@ -1,0 +1,39 @@
+
+<div class="Login">
+    <form class="custom-form" method="post">
+            <div>
+
+
+                <h1>USUARIO</h1>
+   
+                <img  class="imagen" src="./assets/img/ImgLogin.png" alt="">
+        
+
+            </div>
+           
+      
+      <input
+        type="text"
+        [(ngModel)]="Nombre"
+        name="Nombre"
+        placeholder="Nombre"
+        required="required"
+      />
+        <input
+        [type]="hide ? 'password' : 'text'"
+        [(ngModel)]="Password"
+        name="Password"
+        placeholder="Password"
+        required="required"
+        />
+        <button mat-raised-button type="submit" 
+        class="btn btn-white btn-round btn-just-icon"
+        (click)="hide = !hide"
+        >
+        <i class="material-icons">{{hide ? 'visibility_off' : 'visibility'}}</i>
+        </button>
+   
+      
+      <button type="submit" (click)="login()">Ingresar</button>
+    </form>
+  </div>

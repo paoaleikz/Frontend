@@ -9,6 +9,8 @@ export class InventarioComponent implements OnInit {
 
   constructor() { }
 
+  
+
   ngOnInit() {
   }
 

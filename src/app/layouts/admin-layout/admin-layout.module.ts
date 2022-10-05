@@ -18,9 +18,10 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
-import { BodegaComponent } from '../../Bodega/Bodega.component';
-import { InventarioComponent } from '../../Inventario/Inventario.component';
-
+import {BodegaComponent} from '../../Bodega/Bodega.component';
+import {InventarioComponent} from '../../Inventario/Inventario.component';
+import {LoginComponent} from '../../Login/Login.component';
+import {MovimientoProductoComponent} from '../../MovimientoProducto/MovimientoProducto.component';
 
 @NgModule({
   imports: [
@@ -45,7 +46,9 @@ import { InventarioComponent } from '../../Inventario/Inventario.component';
     NotificationsComponent,
     UpgradeComponent,
     BodegaComponent,
-    InventarioComponent
+    InventarioComponent,
+    LoginComponent,
+    MovimientoProductoComponent
   ]
 })
 

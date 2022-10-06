@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./TrasladoBodega.component.css']
 })
 export class TrasladoBodegaComponent implements OnInit {
+    selectBodegaSalida = 'B2';
+    selectBodegaIngreso = 'B1';
 
   constructor() { }
 

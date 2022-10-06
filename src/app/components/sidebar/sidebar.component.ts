@@ -20,6 +20,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/inventario', title: 'Inventario',  icon:'view_list', class: '' },
     { path: '/login', title: 'Login',  icon:'person', class: '' },
     { path: '/movimientoProducto', title: 'MovimientoProducto',  icon:'view_in_ar', class: '' },
+    { path: '/trasladoBodega', title: 'TrasladoBodega',  icon:'multiple_stop', class: '' },
 ];
 
 @Component({

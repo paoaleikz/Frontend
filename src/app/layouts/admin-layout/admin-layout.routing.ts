@@ -12,6 +12,7 @@ import { BodegaComponent } from '../../Bodega/Bodega.component';
 import { InventarioComponent } from '../../Inventario/Inventario.component';
 import { LoginComponent} from '../../Login/Login.component';
 import { MovimientoProductoComponent} from '../../MovimientoProducto/MovimientoProducto.component';
+import { TrasladoBodegaComponent} from '../../TrasladoBodega/TrasladoBodega.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -67,5 +68,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'bodega',         component: BodegaComponent },
     { path: 'inventario',     component: InventarioComponent },
     { path: 'login',          component: LoginComponent },
-    { path: 'movimientoProducto',          component: MovimientoProductoComponent },
+    { path: 'movimientoProducto',      component: MovimientoProductoComponent },
+    { path: 'trasladoBodega',          component: TrasladoBodegaComponent},
+    
 ];

@@ -22,6 +22,7 @@ import {BodegaComponent} from '../../Bodega/Bodega.component';
 import {InventarioComponent} from '../../Inventario/Inventario.component';
 import {LoginComponent} from '../../Login/Login.component';
 import {MovimientoProductoComponent} from '../../MovimientoProducto/MovimientoProducto.component';
+import {TrasladoBodegaComponent} from '../../TrasladoBodega/TrasladoBodega.component';
 
 @NgModule({
   imports: [
@@ -48,7 +49,9 @@ import {MovimientoProductoComponent} from '../../MovimientoProducto/MovimientoPr
     BodegaComponent,
     InventarioComponent,
     LoginComponent,
-    MovimientoProductoComponent
+    MovimientoProductoComponent,
+    TrasladoBodegaComponent
+
   ]
 })
 

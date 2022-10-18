@@ -14,10 +14,11 @@ export class AdminLayoutComponent implements OnInit {
   private _router: Subscription;
   private lastPoppedUrl: string;
   private yScrollStack: number[] = [];
-
+  rolLogueado = "";
   constructor( public location: Location, private router: Router) {}
 
   ngOnInit() {
+       this.rolLogueado = localStorage.getItem('rol');
       const isWindows = navigator.platform.indexOf('Win') > -1 ? true : false;
 
       if (isWindows && !document.getElementsByTagName('body')[0].classList.contains('sidebar-mini')) {

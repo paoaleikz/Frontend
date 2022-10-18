@@ -20,7 +20,6 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
 import {BodegaComponent} from '../../Bodega/Bodega.component';
 import {InventarioComponent} from '../../Inventario/Inventario.component';
-import {LoginComponent} from '../../Login/Login.component';
 import {MovimientoProductoComponent} from '../../MovimientoProducto/MovimientoProducto.component';
 import {TrasladoBodegaComponent} from '../../TrasladoBodega/TrasladoBodega.component';
 
@@ -48,7 +47,6 @@ import {TrasladoBodegaComponent} from '../../TrasladoBodega/TrasladoBodega.compo
     UpgradeComponent,
     BodegaComponent,
     InventarioComponent,
-    LoginComponent,
     MovimientoProductoComponent,
     TrasladoBodegaComponent
 

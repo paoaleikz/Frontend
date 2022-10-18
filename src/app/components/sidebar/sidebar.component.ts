@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input  } from '@angular/core';
 
 declare const $: any;
 declare interface RouteInfo {
@@ -7,20 +7,27 @@ declare interface RouteInfo {
     icon: string;
     class: string;
 }
+export const routesADMIN : RouteInfo[] = [
+  { path: '/home/bodega', title: 'Bodega',  icon:'unarchive', class: '' },
+  { path: '/home/inventario', title: 'Inventario',  icon:'view_list', class: '' },
+  { path: '/home/movimientoProducto', title: 'MovimientoProducto',  icon:'view_in_ar', class: '' },
+  { path: '/home/trasladoBodega', title: 'TrasladoBodega',  icon:'multiple_stop', class: '' },
+
+];
+
+export const routesBODEGA : RouteInfo[] = [
+  { path: '/home/bodega', title: 'Bodega',  icon:'unarchive', class: '' },
+  { path: '/home/trasladoBodega', title: 'TrasladoBodega',  icon:'multiple_stop', class: '' },
+
+];
+
+
+export const routesVENTAS : RouteInfo[] = [
+  { path: '/home/inventario', title: 'Inventario',  icon:'view_list', class: '' },
+
+];
+
 export const ROUTES: RouteInfo[] = [
-    /*{ path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
-    { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
-    { path: '/table-list', title: 'Table List',  icon:'content_paste', class: '' },
-    { path: '/typography', title: 'Typography',  icon:'library_books', class: '' },
-    { path: '/icons', title: 'Icons',  icon:'bubble_chart', class: '' },
-    { path: '/maps', title: 'Maps',  icon:'location_on', class: '' },
-    { path: '/notifications', title: 'Notifications',  icon:'notifications', class: '' },
-    { path: '/upgrade', title: 'Upgrade to PRO',  icon:'unarchive', class: 'active-pro' },*/
-    { path: '/bodega', title: 'Bodega',  icon:'unarchive', class: '' },
-    { path: '/inventario', title: 'Inventario',  icon:'view_list', class: '' },
-    { path: '/login', title: 'Login',  icon:'person', class: '' },
-    { path: '/movimientoProducto', title: 'MovimientoProducto',  icon:'view_in_ar', class: '' },
-    { path: '/trasladoBodega', title: 'TrasladoBodega',  icon:'multiple_stop', class: '' },
 ];
 
 @Component({
@@ -29,12 +36,23 @@ export const ROUTES: RouteInfo[] = [
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
+
+  @Input() rol: string;
   menuItems: any[];
 
   constructor() { }
 
   ngOnInit() {
-    this.menuItems = ROUTES.filter(menuItem => menuItem);
+    console.log(this.rol);
+    if(this.rol=="1"){
+      this.menuItems = routesADMIN.filter(menuItem => menuItem);
+    }else if (this.rol=="2"){
+      this.menuItems = routesBODEGA.filter(menuItem => menuItem);
+    }else{
+      this.menuItems = routesVENTAS.filter(menuItem => menuItem);
+
+    }
+  
   }
   isMobileMenu() {
       if ($(window).width() > 991) {

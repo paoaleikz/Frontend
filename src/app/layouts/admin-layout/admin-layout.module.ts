@@ -54,3 +54,4 @@ import {TrasladoBodegaComponent} from '../../TrasladoBodega/TrasladoBodega.compo
 })
 
 export class AdminLayoutModule {}
+

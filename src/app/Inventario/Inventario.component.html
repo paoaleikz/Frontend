@@ -52,14 +52,13 @@
 
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td> 1 </td>
-                                        <td> pelota </td>
-                                        <td> 4 </td>
-                                        <td> pelota roja </td>
-                                        <td> Q.5.00 </td>
-                                        <td>  1 </td>
-
+                                    <tr *ngFor="let item of inventario">
+                                        <td> {{ item.id_Producto }} </td>
+                                        <td> {{ item.nombreProducto }} </td>
+                                        <td> {{ item.existenciasProducto }} </td>
+                                        <td> {{ item.descripcionProducto }}</td>
+                                        <td> Q.{{ item.precioProducto }} </td>
+                                        <td>  {{ item.bodega }} </td>
                                     </tr>
                                 </tbody>
 

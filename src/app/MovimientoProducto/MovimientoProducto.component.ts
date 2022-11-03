@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MatTableDataSource} from '@angular/material/table';
 
 @Component({
   selector: 'app-MovimientoProducto',
@@ -12,4 +13,7 @@ export class MovimientoProductoComponent implements OnInit {
   ngOnInit() {
   }
 
-}
+  applyFilter(event: Event) {
+    
+     }
+  }
